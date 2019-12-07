@@ -1,0 +1,12 @@
+<ActionBar title="Home">
+</ActionBar>
+
+<GridLayout>
+    <ListView [items]="items">
+        <ng-template let-item="item">
+            <StackLayout width="100%" (tap)="onTapItem(item)">
+                <Label [text]="item.name"></Label>
+            </StackLayout>
+        </ng-template>
+    </ListView>
+</GridLayout>
